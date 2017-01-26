@@ -1,4 +1,6 @@
-package za.co.polymorph.herald;
+package za.co.polymorph.herald.impl;
+
+import za.co.polymorph.herald.OccasionResponse;
 
 public class WelcomeResponse implements OccasionResponse {
 
@@ -6,7 +8,7 @@ public class WelcomeResponse implements OccasionResponse {
     private final String guestName;
     private final String venue;
 
-    WelcomeResponse(String guestName, String venue) {
+    public WelcomeResponse(String guestName, String venue) {
         this.guestName = guestName;
         this.venue = venue;
     }

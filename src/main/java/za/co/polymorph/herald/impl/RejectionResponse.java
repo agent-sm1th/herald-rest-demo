@@ -1,11 +1,13 @@
-package za.co.polymorph.herald;
+package za.co.polymorph.herald.impl;
+
+import za.co.polymorph.herald.OccasionResponse;
 
 public class RejectionResponse implements OccasionResponse {
 
     private static final String template = "Sorry %s. You are not invited to this occasion. Please report to reception.";
     private final String intruderName;
 
-    RejectionResponse(String guestName) {
+    public RejectionResponse(String guestName) {
         this.intruderName = guestName;
     }
 
